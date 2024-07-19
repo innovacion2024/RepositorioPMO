@@ -1,8 +1,9 @@
-from django.contrib import admin
 from django.urls import path
-from . import views
+from django.contrib import admin 
+from .views import index, upload_excel
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('admin/', admin.site.urls, ),
+    path('', index, name='index'),
+    path('admin/', admin.site.urls),
+    path('upload/', upload_excel, name='upload_excel'),
 ]

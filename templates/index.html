@@ -21,7 +21,8 @@
         <p>
           Hola somos la gestión documental de Colvatel 
         </p>
-        <a href="/admin"><button>HAZ CLIC</button></a>
+        <a href="{% url 'admin:index' %}"><button>Ingresar</button></a>
+        <a href="{% url 'upload_excel' %}"><button>Convertir a Json</button></a>
     </div>
     </section>
 

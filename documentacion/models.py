@@ -7,9 +7,6 @@ class Aprovisionamiento(models.Model):
     Celula = models.CharField(max_length=100, null=True, blank=True)
     Lider = models.CharField(max_length=255, null=True, blank=True)
 
-
-
-
 class Backlog(models.Model):
     IdAprovisionamiento = models.TextField(max_length=255, null=True, blank=True) 
     ViabilidadOrigen = models.TextField(max_length=255, null=True, blank=True)
