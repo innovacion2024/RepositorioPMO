@@ -1,0 +1,113 @@
+:root {
+    --color-principal: #2E3440;
+    --color-secundario: #3B4252;
+    --blanco: #f1f1f4;
+    --azul-uno: #216fbc;
+    --azul-dos: #0b3d93;
+    --azul-tres: #4f70af;
+    --azul-cuatro: #122754;
+    --azul-cinco: #080d28;
+    --gris: #dfdfdf;
+}
+
+/* Fondo de partículas */
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background-color: var(--azul-cinco);
+}
+
+/* Márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 5px;
+    color: var(--blanco);
+    font-family:cursive;
+}
+
+/* Contenedor del logo */
+.container {
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: var(--gris);
+}
+
+/* Imagen del logo */
+img.d-inline-block.align-text-top {
+    width: 296px;
+    height: 47px;
+}
+
+/* Texto centrado verticalmente y alineado a la izquierda */
+.todotexto {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    height: calc(100vh - 90px); /* Asegura que el contenido ocupe el resto de la altura de la ventana, excluyendo el contenedor del logo */
+    padding: 20px;
+    font-family:cursive;
+}
+
+.texto {
+    margin-left: 100px; 
+}
+
+/* Boton */
+.boton button {
+    background-color: var(--azul-cuatro); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el color de fondo y la sombra */
+    font-family: auto;
+    
+}
+
+/* Efecto de iluminación */
+.boton button:hover {
+    background-color: var(--azul-dos); /* Al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
+}
+
+/* Contenedor de la segunda imagen */
+.segundaimg {
+    position: absolute; 
+    right: 170px;
+    top: 55%; 
+    transform: translateY(-50%); 
+}
+
+/* Segunda imagen dentro del contenedor */
+.segundaimg img {
+    display: block;
+}
+
+h1{
+    font-size: 35px;
+    color: var(--blanco);
+    font-weight: 500px;
+    font-family: auto;
+}
+
+p{
+    font-family: auto;
+    font-size: 25px;
+}
+
+
+
+
+
+
