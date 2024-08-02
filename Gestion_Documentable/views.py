@@ -40,4 +40,4 @@ def upload_excel(request):
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=400)
     
-    return render(request, 'upload.html')
+    return render(request, 'index.html')

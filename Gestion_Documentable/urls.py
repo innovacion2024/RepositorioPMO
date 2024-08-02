@@ -5,5 +5,5 @@ from .views import index, upload_excel
 urlpatterns = [
     path('', index, name='index'),
     path('admin/', admin.site.urls),
-    path('upload/', upload_excel, name='upload_excel'),
+    path('upload', upload_excel, name='upload_excel'),
 ]
