@@ -26,7 +26,6 @@
     box-sizing: border-box;
     font-size: 5px;
     color: var(--blanco);
-    font-family:cursive;
 }
 
 /* Contenedor del logo */
@@ -50,7 +49,7 @@ img.d-inline-block.align-text-top {
     align-items: center; 
     justify-content: flex-start; 
     height: calc(100vh - 90px); /* Asegura que el contenido ocupe el resto de la altura de la ventana, excluyendo el contenedor del logo */
-    padding: 20px;
+    padding: 2px;
     font-family:cursive;
 }
 
@@ -81,19 +80,6 @@ img.d-inline-block.align-text-top {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
 }
 
-/* Contenedor de la segunda imagen */
-.segundaimg {
-    position: absolute; 
-    right: 170px;
-    top: 55%; 
-    transform: translateY(-50%); 
-}
-
-/* Segunda imagen dentro del contenedor */
-.segundaimg img {
-    display: block;
-}
-
 h1{
     font-size: 35px;
     color: var(--blanco);
@@ -105,6 +91,103 @@ p{
     font-family: auto;
     font-size: 25px;
 }
+
+/* Estilo del botón */
+button {
+    background-color: var(--azul-cuatro); 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: auto;
+}
+
+button:hover {
+    background-color: var(--azul-dos);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los textos */
+h1 {
+    font-size: 35px;    
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+p {
+    font-size: 25px;
+}
+
+.custom-file-upload {
+    background-color: var(--azul-cuatro); 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 22px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el color de fondo y la sombra */
+    font-family: auto;
+    margin-bottom: 10px; /* Espacio entre el label y el input */
+    
+}
+
+
+/* Ocultar el input de archivo predeterminado */
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: var(--azul-dos); /* Al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
+}
+
+.container1 {
+    position: absolute;
+    right: 150px; /* Espacio desde el borde derecho de la página */
+    top: 57%; /* Sitúa el contenedor en la mitad de la altura de la página */
+    transform: translateY(-50%); /* Ajusta el contenedor al centro vertical */
+    text-align: center;
+}
+    
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.funcionConvertir {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 20px; /* Espacio superior para separación adicional si es necesario */
+}
+
+.funcionConvertir label {
+    margin-bottom: 10px; /* Espacio entre el label y el input */
+}
+
+.funcionConvertir input[type="file"] {
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+}
+
+
+
+
+
+
+
 
 
 
