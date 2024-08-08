@@ -156,11 +156,6 @@ p {
     margin-bottom: 10px; /* Espacio entre el label y el input */   
 }
 
-/* Ocultar el input de archivo predeterminado */
-input[type="file"] {
-    display: none;
-}
-
 .custom-file-upload:hover {
     background-color: var(--azul-dos); /* Al pasar el mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
